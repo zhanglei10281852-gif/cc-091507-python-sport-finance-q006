@@ -1,0 +1,10 @@
+{
+  "event_types": ["class_booked", "checked_in", "referral", "refund", "substitute", "settlement_correction"],
+  "settlement_states": ["open", "locked", "corrected"],
+  "currencies": [
+    "CNY",
+    "HKD",
+    "USD"
+  ],
+  "quantity_precision": 6
+}
