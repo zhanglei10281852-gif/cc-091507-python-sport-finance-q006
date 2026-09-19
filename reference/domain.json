@@ -1,10 +1,34 @@
 {
-  "event_types": ["class_booked", "checked_in", "referral", "refund", "substitute", "settlement_correction"],
-  "settlement_states": ["open", "locked", "corrected"],
-  "currencies": [
-    "CNY",
-    "HKD",
-    "USD"
+  "event_types": [
+    "store_registered",
+    "person_registered",
+    "rule_version_published",
+    "package_sold",
+    "class_session_created",
+    "coach_reassigned",
+    "booking_registered",
+    "check_in_recorded",
+    "check_in_reversed",
+    "package_transferred",
+    "refund_recorded",
+    "bad_debt_written_off",
+    "settlement_locked",
+    "correction_opened",
+    "correction_posted"
   ],
-  "quantity_precision": 6
+  "entry_kinds": [
+    "coach_commission",
+    "sales_referral",
+    "store_revenue",
+    "deferred_revenue",
+    "manual_adjustment"
+  ],
+  "settlement_states": ["open", "locked", "corrected"],
+  "currencies": ["CNY", "HKD", "USD"],
+  "money_unit": "integer_cents",
+  "quantity_precision": 6,
+  "batch_id_formats": {
+    "settlement": "STL-YYYY-MM-CCY",
+    "correction": "COR-YYYY-MM-CCY-NN"
+  }
 }
